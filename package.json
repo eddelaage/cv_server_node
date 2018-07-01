@@ -1,0 +1,25 @@
+{
+  "name": "cv_server_node",
+  "version": "1.0.0",
+  "description": "Server for cv application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddelaage/cv_server_node.git"
+  },
+  "author": "Edouard de Laage",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eddelaage/cv_server_node/issues"
+  },
+  "homepage": "https://github.com/eddelaage/cv_server_node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3"
+  }
+}
