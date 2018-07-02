@@ -1,0 +1,8 @@
+{
+  "mysql": {
+    "host": "localhost",
+    "user": "youruser",
+    "password": "yourpassword",
+    "database": "cv_edouard"
+  }
+}
