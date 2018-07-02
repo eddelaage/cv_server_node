@@ -59,7 +59,7 @@ Router.post('/messages', function(req, res, next) {
   connection.query(insertUserQuery, values)
     .then(result => {
       console.log(result)
-      res.status(200).json({ flash:  "User has been signed up !" });
+      res.status(200).json({ flash:  'Merci pour votre méssage. Je reviens très vitre vers vous' });
     })
     .catch(err => {
       res.status(500).json({ flash:  err.message });
