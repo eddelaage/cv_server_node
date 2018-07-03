@@ -4,11 +4,15 @@
   "description": "Server for cv application",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eddelaage/cv_server_node.git"
+  },
+  "engines": {
+    "node": "8.10.0"
   },
   "author": "Edouard de Laage",
   "license": "MIT",

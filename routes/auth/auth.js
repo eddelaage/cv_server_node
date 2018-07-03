@@ -3,9 +3,6 @@ const express  =  require('express')
 const Router = express.Router()
 const connection = require('../../helpers/db.js')
 const nodemailer = require('nodemailer')
-const config = require('../../config.json')
-
-
 
 Router.post('/send-email', function(req, res) {
 
@@ -20,8 +17,8 @@ Router.post('/send-email', function(req, res) {
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
-          user: config.gmail.user, // generated ethereal user
-          pass: config.gmail.password // generated ethereal password
+          user: process.env.GMAIL_USER, // generated ethereal user
+          pass: process.env.GMAIL_PASSWORD // generated ethereal password
       }
     })
     const mailOptions = {

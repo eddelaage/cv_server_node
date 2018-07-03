@@ -1,6 +1,10 @@
 const mysql = require('mysql2/promise')
-const config = require('../config.json')
-const pool = mysql.createPool(config.mysql)
+const pool = mysql.createPool({
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
+})
 
 const first = async p => (await p)[0]
 
